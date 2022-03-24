@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 67px;
+    background-color: #c3cfd9;
+}
+p{
+    color: #e8833a;
+}
+
