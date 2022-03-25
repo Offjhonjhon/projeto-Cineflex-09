@@ -1,12 +1,16 @@
 header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     width: 100vw;
     height: 67px;
     background-color: #c3cfd9;
 }
-p{
+header p{
+    width: 100%;
+    height: 100%;
     color: #e8833a;
+    font-size: 34px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

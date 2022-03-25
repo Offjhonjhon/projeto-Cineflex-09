@@ -1,0 +1,18 @@
+.time {
+    display: flex;
+    margin: 22px 23px;
+    gap: 8px;
+}
+.time p {
+    width: 83px;
+    height: 43px;
+    background: #E8833A;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
