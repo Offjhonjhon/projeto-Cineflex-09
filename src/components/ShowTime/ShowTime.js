@@ -7,8 +7,8 @@ function ShowTime({time}) {
             <div className="time">
                 {time.map((obj) => {
                     return(
-                        <Link to={`/movieSeats/${obj.id}`}>
-                            <p key={obj.id}>{obj.name}</p>
+                        <Link className='link' key={obj.id} to={`/assentos/${obj.id}`}>
+                            <p >{obj.name}</p>
                         </Link>
                     )
                 })}

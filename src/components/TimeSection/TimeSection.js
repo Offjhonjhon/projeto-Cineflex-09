@@ -7,12 +7,12 @@ import Footer from "../Footer/Footer";
 
 function TimeSection() {
     
-    const {movieId} = useParams();
+    const {idFilme} = useParams();
     const [schedule, setSchedule] = useState([]);
     const [footer, setFooter] = useState({});
 
     useEffect(() => {
-        const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${movieId}/showtimes`);
+        const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${idFilme}/showtimes`);
         promise.then(response => {
           const {data} = response;
           setFooter(data);
@@ -26,14 +26,14 @@ function TimeSection() {
                 <p className="time-section-title">Selecione o horario</p>
                 {schedule.map((obj) => {
                     return(
-                    <div>
-                        <p className="time-section" key={obj.id}>{obj.weekday} - {obj.date}</p>
+                    <div key={obj.id}>
+                        <p className="time-section" >{obj.weekday} - {obj.date}</p>
                         <ShowTime time={obj.showtimes} />
                     </div>);
                 })}
             </main>
                 <Footer posterURL={footer.posterURL} movieName={footer.title} />
-                {console.log(footer)}
+                
         </>
       );
       

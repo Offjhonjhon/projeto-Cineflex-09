@@ -1,8 +1,8 @@
 .footer {
-    position: fixed;
-    bottom: 0;
+    width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 117px;
     background: #DFE6ED;
@@ -26,4 +26,7 @@
 .footer-poster img {
     width: 48px;
     height: 72px;
+}
+.container {
+    display: flex;
 }

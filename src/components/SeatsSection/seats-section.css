@@ -1,0 +1,116 @@
+.seat-section-title{
+    width: 100vw;
+    height: 110px;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #293845;
+    margin-bottom: -13px;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 7px;
+    padding: 0 24px 0 24px;
+    margin-bottom: 10px;
+}
+
+.seat-description {
+    display: flex;    
+    justify-content: space-around;
+}
+.seat-description div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selected-description div{
+    width: 26px;
+    height: 26px;
+    border: 1px solid #808F9D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    background-color:  #8DD7CF;
+}
+.available-description div{
+    width: 26px;
+    height: 26px;
+    border: 1px solid #808F9D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    background-color:  #C3CFD9;
+}
+
+.unvailable-description div{
+    width: 26px;
+    height: 26px;
+    border: 1px solid #808F9D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    background-color:  #FBE192;
+}
+
+.seat-description p {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.013em;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.form{
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    margin-top: 41px;
+}
+
+form input {
+    width: 327px;
+    height: 51px;
+}
+form label {
+    font-size: 18px;
+    line-height: 21px;
+    color: #293845;
+}
+form input::placeholder{
+    font-size: 18px;
+    line-height: 21px;
+    font-style: italic;
+    color: #AFAFAF;
+}
+form button{
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 57px;
+    margin-left: 48px;
+}
+
+.screen2 {
+    color: #247A6B;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+

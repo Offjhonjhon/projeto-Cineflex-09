@@ -1,5 +1,6 @@
 import './footer.css'
-function Footer({posterURL, movieName, schedule}) {
+function Footer({posterURL, movieName, schedule, day}) {
+    
     return(
         <div className="footer">
             <div className='footer-poster'>
@@ -7,7 +8,11 @@ function Footer({posterURL, movieName, schedule}) {
             </div>
             <div>
                 <p>{movieName}</p>
-                <p>{schedule}</p>
+                <div className='container'>
+                    {  day ? <p>{day.weekday} -</p> : <p></p> }
+                    <p>{schedule}</p>
+                </div>
+                
             </div>
         </div>
     );    

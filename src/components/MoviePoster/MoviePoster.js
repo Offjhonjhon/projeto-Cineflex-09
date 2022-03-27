@@ -3,7 +3,7 @@ import './movie-poster.css'
 function MoviePoster({url, id}) {
     
     return (
-        <Link to={`/movieSchedule/${id}`}>
+        <Link to={`/sessoes/${id}`}>
             <div className="poster">
                 <img src={url}></img>
             </div>

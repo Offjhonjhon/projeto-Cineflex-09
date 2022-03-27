@@ -1,0 +1,35 @@
+.available {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    background: #C3CFD9;
+    border: 1px solid #808F9D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+}
+
+.unavailable {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    background: #FBE192;
+    border: 1px solid #808F9D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+}
+
+.selected {
+    background: #8DD7CF;
+}

@@ -1,0 +1,45 @@
+.sucess {
+    color: #247A6B;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.title {
+    width: 100vw;
+    margin-left: 29px;
+    margin-bottom: 50px;
+}
+.title p {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #293845;
+}
+
+.first{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #293845;
+    margin-bottom: 8px;
+}
+
+.back-home {
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border-radius: 3px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    margin-top: 60px;
+}
+.button {
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
