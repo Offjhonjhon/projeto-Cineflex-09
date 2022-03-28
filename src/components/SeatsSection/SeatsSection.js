@@ -23,7 +23,6 @@ function SeatsSection() {
     };
     const navigate = useNavigate();
     
-    
     useEffect(() => {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/showtimes/${idSessao}/seats`);
         promise.then(response => {
@@ -44,7 +43,6 @@ function SeatsSection() {
         
         const promise = axios.post('https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many', postObject);
         promise.then(response => {
-            console.log(response);
             navigate(`/sucesso`, 
                 {state: {post: postObject,
                         footer: footer,
@@ -55,7 +53,6 @@ function SeatsSection() {
         promise.catch(error => {
             console.log(error);
         })
-        console.log(postObject);
 
     }
 

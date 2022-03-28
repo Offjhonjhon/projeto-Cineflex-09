@@ -5,9 +5,7 @@ import TimeSection from "../TimeSection/TimeSection";
 import SeatsSection from "../SeatsSection/SeatsSection";
 import SucessSection from "../SucessSection/SucessSection";
 
-
 function App() {
-
 
     return( 
         <>
