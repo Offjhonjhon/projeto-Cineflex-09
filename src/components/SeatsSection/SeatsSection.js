@@ -8,7 +8,6 @@ import Footer from '../Footer/Footer';
 function SeatsSection() {
 
     const {idSessao} = useParams();
-    const [seatSection, setSeatSection] = useState('screen1');
     const [seats, setSeats] = useState([]);
     const [footer, setFooter] = useState({});
     const [schedule, setSchedule] = useState({});
@@ -40,6 +39,10 @@ function SeatsSection() {
 
     function sendRequest(event) {
         event.preventDefault();
+        if (seatIdList.length === 0) {
+            alert('Selecione pelo menos um assento');
+            return;
+        }
         
         const promise = axios.post('https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many', postObject);
         promise.then(response => {
@@ -57,10 +60,8 @@ function SeatsSection() {
     }
 
     
-    
     return(
         <>
-           
                 <main>
                     <p className='seat-section-title'>Selecione o(s) assentos(s)</p>  
                     <div className='seats'>
